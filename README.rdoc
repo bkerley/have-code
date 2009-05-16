@@ -1,6 +1,18 @@
 = have_code
 
-Add clever little base36 codes for your database objects.
+Add clever little base36 codes for your DataMapper and ActiveRecord objects.
+
+== Whoa seriously??
+
+   # ActiveRecord
+   initech = Mug.create :name=>'initech', :material=>'porcelain'
+   code = initech.code
+   initech == Mug.find_by_code code
+   
+   # DataMapper
+   kohg = Goblet.create :name=>'king of hyrule', :material=>'gold'
+   code = kohg.code
+   kohg == Goblet.find_by_code code
 
 == Dependencies
 
