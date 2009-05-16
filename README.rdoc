@@ -1,6 +1,10 @@
 = have_code
 
-Description goes here.
+Add clever little base36 codes for your database objects.
+
+== Dependencies
+
+* bkerley-affine
 
 == Copyright
 

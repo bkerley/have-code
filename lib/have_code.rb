@@ -1,3 +1,4 @@
+require 'affine'
 require File.join(File.dirname(__FILE__), 'have_code', 'ar_code')
 require File.join(File.dirname(__FILE__), 'have_code', 'dm_code')
 module HaveCode
