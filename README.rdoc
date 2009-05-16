@@ -1,4 +1,4 @@
-= have_code
+= have-code
 
 Add clever little base36 codes for your DataMapper and ActiveRecord objects.
 
@@ -16,7 +16,7 @@ Add clever little base36 codes for your DataMapper and ActiveRecord objects.
 
 == Dependencies
 
-* bkerley-affine
+* bkerley-affine (waiting on rubyforge to approve)
 
 == Copyright
 
