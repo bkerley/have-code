@@ -4,12 +4,13 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "have_code"
+    gem.name = "have-code"
     gem.summary = %Q{TODO}
     gem.email = "bkerley@brycekerley.net"
-    gem.homepage = "http://github.com/bkerley/have_code"
+    gem.homepage = "http://github.com/bkerley/have-code"
     gem.authors = ["Bryce Kerley"]
 
+    gem.rubyforge_project = 'have-code'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
@@ -49,7 +50,7 @@ Rake::RDocTask.new do |rdoc|
   end
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "have_code #{version}"
+  rdoc.title = "have-code #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

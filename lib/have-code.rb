@@ -1,6 +1,6 @@
 require 'affine'
-require File.join(File.dirname(__FILE__), 'have_code', 'ar_code')
-require File.join(File.dirname(__FILE__), 'have_code', 'dm_code')
+require File.join(File.dirname(__FILE__), 'have-code', 'ar_code')
+require File.join(File.dirname(__FILE__), 'have-code', 'dm_code')
 module HaveCode
   def self.enable_activerecord
     return if ActiveRecord::Base.respond_to? :have_code
