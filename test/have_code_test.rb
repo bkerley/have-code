@@ -6,4 +6,9 @@ class HaveCodeTest < Test::Unit::TestCase
       assert Mug.respond_to?(:have_code)
     end
   end
+  in_datamapper do
+    should "have a 'have_code' method" do
+      assert Goblet.respond_to?(:have_code)
+    end
+  end
 end
