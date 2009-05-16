@@ -12,6 +12,13 @@ class HaveCodeTest < Test::Unit::TestCase
       should "have a 'find_by_code' method" do
         assert Mug.respond_to?(:find_by_code)
       end
+      should 'create an object, get its code, and recall it by code' do
+        initech = Mug.create :name=>'initech', :material=>'porcelain'
+        code = initech.code
+        assert code.is_a?(String)
+        lumbergh = Mug.find_by_code code
+        assert_equal initech, lumbergh
+      end
     end
   end
   in_datamapper do
