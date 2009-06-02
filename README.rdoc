@@ -16,7 +16,7 @@ Add clever little base36 codes for your DataMapper and ActiveRecord objects.
 
 == Dependencies
 
-* bkerley-affine (waiting on rubyforge to approve)
+* affine
 
 == Copyright
 
