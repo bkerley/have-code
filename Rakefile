@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "have-code"
-    gem.summary = %Q{TODO}
+    gem.summary = "Add clever little base36 codes for your DataMapper and ActiveRecord objects."
     gem.email = "bkerley@brycekerley.net"
     gem.homepage = "http://github.com/bkerley/have-code"
     gem.authors = ["Bryce Kerley"]
