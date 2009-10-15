@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{have-code}
-  s.version = "0.1.4"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Bryce Kerley"]
@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{have-code}
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{TODO}
+  s.summary = %q{Add clever little base36 codes for your DataMapper and ActiveRecord objects.}
   s.test_files = [
     "test/active_record_helper.rb",
      "test/data_mapper_helper.rb",
