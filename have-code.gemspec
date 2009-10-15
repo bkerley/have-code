@@ -2,28 +2,31 @@
 
 Gem::Specification.new do |s|
   s.name = %q{have-code}
-  s.version = "0.1.1"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Bryce Kerley"]
-  s.date = %q{2009-05-16}
+  s.date = %q{2009-06-10}
   s.email = %q{bkerley@brycekerley.net}
   s.extra_rdoc_files = [
     "LICENSE",
-    "README.rdoc"
+     "README.rdoc"
   ]
   s.files = [
-    "LICENSE",
-    "README.rdoc",
-    "Rakefile",
-    "VERSION.yml",
-    "lib/have-code.rb",
-    "lib/have-code/ar_code.rb",
-    "lib/have-code/dm_code.rb",
-    "test/active_record_helper.rb",
-    "test/data_mapper_helper.rb",
-    "test/have_code_test.rb",
-    "test/test_helper.rb"
+    ".document",
+     ".gitignore",
+     "LICENSE",
+     "README.rdoc",
+     "Rakefile",
+     "VERSION.yml",
+     "have-code.gemspec",
+     "lib/have-code.rb",
+     "lib/have-code/ar_code.rb",
+     "lib/have-code/dm_code.rb",
+     "test/active_record_helper.rb",
+     "test/data_mapper_helper.rb",
+     "test/have_code_test.rb",
+     "test/test_helper.rb"
   ]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/bkerley/have-code}
@@ -34,9 +37,9 @@ Gem::Specification.new do |s|
   s.summary = %q{TODO}
   s.test_files = [
     "test/active_record_helper.rb",
-    "test/data_mapper_helper.rb",
-    "test/have_code_test.rb",
-    "test/test_helper.rb"
+     "test/data_mapper_helper.rb",
+     "test/have_code_test.rb",
+     "test/test_helper.rb"
   ]
 
   if s.respond_to? :specification_version then

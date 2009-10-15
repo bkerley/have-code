@@ -5,18 +5,49 @@ Add clever little base36 codes for your DataMapper and ActiveRecord objects.
 == Whoa seriously??
 
    # ActiveRecord
+   class Mug < ActiveRecord::Base
+     have_code 60466169, 12034710206, 81268112
+   end
+
    initech = Mug.create :name=>'initech', :material=>'porcelain'
    code = initech.code
    initech == Mug.find_by_code code
    
    # DataMapper
+   class Goblet
+     include DataMapper::Resource
+     property :id, Serial
+     property :name, String
+     property :material, String
+     have_code 60466169, 12034710206, 81268112
+   end
    kohg = Goblet.create :name=>'king of hyrule', :material=>'gold'
    code = kohg.code
    kohg == Goblet.find_by_code code
 
+== What are those big numbers?
+
+In order:
+
+[modulus] specifies how many different plaintexts and ciphertexts
+          are available.
+[a_key] multiplied against the plaintext. <b>Must be coprime with
+        the modulus.</b>
+[b_key] added to the multiplied plaintext.  No restrictions, but
+        it's modulus math, so making it larger than +modulus+ is
+        useless.
+
+Change them to whatever you want, write tests to make sure they work
+as expected.
+
+== How secure is it?
+
+Affine ciphers are incredibly easy to break.  See the readme for the
++affine+ gem or http://en.wikipedia.org/wiki/Affine_cipher for more.
+
 == Dependencies
 
-* bkerley-affine (waiting on rubyforge to approve)
+* affine
 
 == Copyright
 
