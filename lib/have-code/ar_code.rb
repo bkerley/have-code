@@ -9,7 +9,7 @@ module HaveCode
         write_inheritable_attribute :have_code_cipher, Affine::Cipher.new(mod, a, b)
 
         extend OptionalClassMethods
-        include InstanceMethods
+        include HaveCode::CommonCode::InstanceMethods
       end
     end
 
@@ -23,16 +23,6 @@ module HaveCode
         return nil
       rescue
         nil
-      end
-    end
-
-    module InstanceMethods
-      def have_code_cipher
-        self.class.read_inheritable_attribute :have_code_cipher
-      end
-
-      def code
-        have_code_cipher.encipher(id).to_s(36)
       end
     end
   end
