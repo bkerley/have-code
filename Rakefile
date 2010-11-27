@@ -10,7 +10,7 @@ begin
     gem.homepage = "http://github.com/bkerley/have-code"
     gem.authors = ["Bryce Kerley"]
 
-    gem.add_dependency 'bkerley-affine'
+    gem.add_dependency 'affine'
 
     gem.rubyforge_project = 'have-code'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
